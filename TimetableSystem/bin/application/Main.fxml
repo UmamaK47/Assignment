@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<BorderPane fx:id="mainBP" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="764.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <left>
+      <VBox prefHeight="520.0" prefWidth="172.0" style="-fx-background-color: #637367;" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onMouseClicked="#home" prefHeight="66.0" prefWidth="185.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="HOME" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#Teacher" prefHeight="66.0" prefWidth="185.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="TEACHER" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+            <Button layoutX="10.0" layoutY="76.0" mnemonicParsing="false" onMouseClicked="#Course" prefHeight="66.0" prefWidth="185.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="COURSES" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+            <Button layoutX="10.0" layoutY="143.0" mnemonicParsing="false" onMouseClicked="#Room" prefHeight="66.0" prefWidth="185.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="ROOMS" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+            <Button layoutX="10.0" layoutY="209.0" mnemonicParsing="false" onMouseClicked="#Timetable" prefHeight="66.0" prefWidth="185.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="TIMETABLE" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+            <Button layoutX="10.0" layoutY="276.0" mnemonicParsing="false" onMouseClicked="#viewTimetable" prefHeight="66.0" prefWidth="185.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="VIEW TIMETABLE" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+            <Button layoutX="10.0" layoutY="276.0" mnemonicParsing="false" onMouseClicked="#exit" prefHeight="66.0" prefWidth="185.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="EXIT" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane fx:id="mainAP" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #abc2b1;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="WHITE" layoutX="70.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WELCOME TO TIMETABLE MANAGEMENT SYSTEM" wrappingWidth="424.0859375">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

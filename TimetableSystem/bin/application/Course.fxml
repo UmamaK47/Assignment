@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="592.0" style="-fx-background-color: #abc2b1;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.courseController">
+   <children>
+      <Pane prefHeight="522.0" prefWidth="592.0">
+         <children>
+            <Text fill="WHITE" layoutX="241.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Courses">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="82.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fill the Following:">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Text>
+            <TextField fx:id="courseNameTxt" layoutX="82.0" layoutY="108.0" promptText="Enter Course Name..." />
+            <TextField fx:id="courseIdTxt" layoutX="82.0" layoutY="153.0" promptText="Enter Course ID..." />
+            <Button layoutX="82.0" layoutY="207.0" mnemonicParsing="false" onAction="#addCourse" prefHeight="33.0" prefWidth="115.0" style="-fx-background-color: #637367;" text="ADD" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="197.0" layoutY="207.0" mnemonicParsing="false" onAction="#removeCourse" prefHeight="33.0" prefWidth="115.0" style="-fx-background-color: #637367;" text="REMOVE" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="312.0" layoutY="207.0" mnemonicParsing="false" onAction="#updateCourse" prefHeight="33.0" prefWidth="115.0" style="-fx-background-color: #637367;" text="UPDATE" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <TableView fx:id="coursesTable" layoutX="82.0" layoutY="260.0" prefHeight="200.0" prefWidth="346.0">
+              <columns>
+                <TableColumn fx:id="courseIDCol" prefWidth="128.79998779296875" text="CourseID" />
+                <TableColumn fx:id="courseNameCol" prefWidth="215.20001220703125" text="CourseName" />
+              </columns>
+            </TableView>
+         </children>
+      </Pane>
+   </children>
+</VBox>
